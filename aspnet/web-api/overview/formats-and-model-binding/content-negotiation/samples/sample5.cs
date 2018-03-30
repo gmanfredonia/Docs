@@ -10,7 +10,7 @@ public HttpResponseMessage GetProduct(int id)
     if (result == null)
     {
         var response = new HttpResponseMessage(HttpStatusCode.NotAcceptable);
-        throw new HttpResponseException(response));
+        throw new HttpResponseException(response);
     }
 
     return new HttpResponseMessage()
